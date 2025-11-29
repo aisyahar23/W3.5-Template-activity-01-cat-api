@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cat API Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <h1>🐱 The Cat API Explorer</h1>
+            <p>Discover random cat photos and explore different breeds!</p>
+        </header>
+
+        <main class="main-content">
+            <div class="control-panel">
+                <h2>Choose Your Adventure</h2>
+                <div class="button-grid">
+                    <button id="randomCatBtn" class="api-button primary">
+                        🎲 Random Cat
+                    </button>
+                    <button id="breedListBtn" class="api-button secondary">
+                        📋 List All Breeds
+                    </button>
+                    <button id="randomBreedBtn" class="api-button tertiary">
+                        🎯 Random Breed
+                    </button>
+                    <button id="showJsonBtn" class="api-button info">
+                        📄 Show Raw JSON
+                    </button>
+                </div>
+
+                <!-- TODO: Add breed search functionality -->
+                <div class="search-section">
+                    <h3>Search by Breed</h3>
+                    <input type="text" id="breedInput" placeholder="Enter breed name (e.g., siamese, persian)" />
+                    <button id="searchBreedBtn" class="api-button search">
+                        🔍 Search Breed
+                    </button>
+                </div>
+            </div>
+
+            <div class="results-container">
+                <div id="loading" class="loading hidden">
+                    <div class="spinner"></div>
+                    <p>Fetching adorable cats...</p>
+                </div>
+
+                <div id="result" class="result-display">
+                    <div class="welcome-message">
+                        <h3>Welcome to The Cat API Explorer!</h3>
+                        <p>Click any button above to start exploring. This project will teach you:</p>
+                        <ul>
+                            <li>How to make API calls with JavaScript</li>
+                            <li>Working with JSON data</li>
+                            <li>Displaying images from APIs</li>
+                            <li>Handling different API endpoints</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Offline fallback data -->
+                <div id="fallback" class="fallback-notice hidden">
+                    <h3>🚧 API Unavailable</h3>
+                    <p>Don't worry! Here's some fallback data to practice with:</p>
+                    <div class="fallback-content">
+                        <h4>Sample Cat Breeds:</h4>
+                        <ul>
+                            <li>Siamese</li>
+                            <li>Persian</li>
+                            <li>Maine Coon</li>
+                            <li>British Shorthair</li>
+                            <li>Abyssinian</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Built with ❤️ using <a href="https://thecatapi.com/" target="_blank">The Cat API</a></p>
+            <p>Perfect for learning API integration!</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

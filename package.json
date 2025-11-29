@@ -1,0 +1,26 @@
+{
+  "name": "w35-activity-01-cat-api",
+  "version": "1.0.0",
+  "description": "The Cat API Explorer - Learn API basics with adorable cats!",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000",
+    "test": "echo 'Open http://localhost:8000 in your browser'"
+  },
+  "keywords": [
+    "api",
+    "javascript",
+    "fetch",
+    "cat-api",
+    "beginners",
+    "education"
+  ],
+  "author": "W3.5 API Integration Course",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {},
+  "stackblitz": {
+    "startCommand": "echo 'Open the preview to see your Cat API Explorer!'"
+  }
+}
